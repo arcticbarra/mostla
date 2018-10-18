@@ -79,6 +79,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         
         destination.tit = technologies[(indice?.first?.row)!].name
         destination.inf = technologies[(indice?.first?.row)!].info
+        destination.img = technologies[(indice?.first?.row)!].image
     }
 
     // MARK: UICollectionViewDataSource

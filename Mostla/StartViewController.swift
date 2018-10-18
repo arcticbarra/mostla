@@ -1,31 +1,22 @@
 //
-//  ViewControllerTecnologias.swift
+//  StartViewController.swift
 //  Mostla
 //
-//  Created by Alumno on 10/17/18.
+//  Created by Enrique Barragán on 10/17/18.
 //  Copyright © 2018 Enrique Barragán. All rights reserved.
 //
 
 import UIKit
 
-class ViewControllerTecnologias: UIViewController {
+class StartViewController: UIViewController {
 
-    @IBOutlet weak var titulo: UILabel!
-    @IBOutlet weak var info: UITextView!
-    @IBOutlet weak var image: UIImageView!
+  @IBOutlet weak var button: UIButton!
   
-    var tit : String!
-    var inf : String!
-    var img: UIImage!
-    
-    override func viewDidLoad() {
+  override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
-        titulo.text = tit
-        info.text = inf
-        image.image = img
+    button.layer.cornerRadius = 5
+    button.layer.borderWidth = 1
+    button.layer.borderColor = UIColor.darkGray.cgColor
     }
     
 
