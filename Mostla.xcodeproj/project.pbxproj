@@ -12,9 +12,14 @@
 		3144E55621764BAF006E4E27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3144E55421764BAF006E4E27 /* Main.storyboard */; };
 		3144E55821764BB0006E4E27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3144E55721764BB0006E4E27 /* Assets.xcassets */; };
 		3144E55B21764BB0006E4E27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3144E55921764BB0006E4E27 /* LaunchScreen.storyboard */; };
+		315700CF21840DB10004A5E0 /* genstrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315700CE21840DB10004A5E0 /* genstrings.swift */; };
+		315700D221840EF20004A5E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 315700D421840EF20004A5E0 /* Localizable.strings */; };
+		31BA2BAE217E6C2C0019DC31 /* ViewControllerAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BA2BAD217E6C2C0019DC31 /* ViewControllerAR.swift */; };
+		31BA2BB0217E6D510019DC31 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 31BA2BAF217E6D510019DC31 /* art.scnassets */; };
 		31E418AA21778793003134A8 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E418A921778793003134A8 /* CollectionViewController.swift */; };
 		31E418AC21778966003134A8 /* Technology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E418AB21778966003134A8 /* Technology.swift */; };
 		31E418AE217790DC003134A8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E418AD217790DC003134A8 /* CollectionViewCell.swift */; };
+		EFE3B61818F5FDC5BF9D68AF /* Pods_Mostla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FA46FA6187CDA49F1755AF /* Pods_Mostla.framework */; };
 		FB3D945C2177A25B003A4290 /* ViewControllerTecnologias.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D945B2177A25B003A4290 /* ViewControllerTecnologias.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,9 +31,20 @@
 		3144E55721764BB0006E4E27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3144E55A21764BB0006E4E27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3144E55C21764BB0006E4E27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		315700CE21840DB10004A5E0 /* genstrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genstrings.swift; sourceTree = "<group>"; };
+		315700D321840EF20004A5E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		31BA2BAD217E6C2C0019DC31 /* ViewControllerAR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAR.swift; sourceTree = "<group>"; };
+		31BA2BAF217E6D510019DC31 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		31E418A921778793003134A8 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		31E418AB21778966003134A8 /* Technology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Technology.swift; sourceTree = "<group>"; };
 		31E418AD217790DC003134A8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		31E8CD97218416B200E13CEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		31E8CD98218417CD00E13CEE /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Main.strings"; sourceTree = "<group>"; };
+		31E8CD99218417CD00E13CEE /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		31E8CD9A218417CD00E13CEE /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AA1C68E134A6BE3FD4B46319 /* Pods-Mostla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mostla.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mostla/Pods-Mostla.release.xcconfig"; sourceTree = "<group>"; };
+		B55AC36F0CBBAF631013E44B /* Pods-Mostla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mostla.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mostla/Pods-Mostla.debug.xcconfig"; sourceTree = "<group>"; };
+		B9FA46FA6187CDA49F1755AF /* Pods_Mostla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mostla.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3D945B2177A25B003A4290 /* ViewControllerTecnologias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTecnologias.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE3B61818F5FDC5BF9D68AF /* Pods_Mostla.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +65,8 @@
 			children = (
 				3144E54F21764BAF006E4E27 /* Mostla */,
 				3144E54E21764BAF006E4E27 /* Products */,
+				44891EFAEAF4483B7D943DA9 /* Pods */,
+				B38285ABFCB312252AEE1AE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,16 +83,37 @@
 			children = (
 				3144E55021764BAF006E4E27 /* AppDelegate.swift */,
 				3144E55421764BAF006E4E27 /* Main.storyboard */,
+				31BA2BAD217E6C2C0019DC31 /* ViewControllerAR.swift */,
+				31BA2BAF217E6D510019DC31 /* art.scnassets */,
 				3143015221781EC400765693 /* StartViewController.swift */,
 				FB3D945B2177A25B003A4290 /* ViewControllerTecnologias.swift */,
 				31E418AD217790DC003134A8 /* CollectionViewCell.swift */,
 				31E418A921778793003134A8 /* CollectionViewController.swift */,
+				315700CE21840DB10004A5E0 /* genstrings.swift */,
+				315700D421840EF20004A5E0 /* Localizable.strings */,
 				31E418AB21778966003134A8 /* Technology.swift */,
 				3144E55721764BB0006E4E27 /* Assets.xcassets */,
 				3144E55921764BB0006E4E27 /* LaunchScreen.storyboard */,
 				3144E55C21764BB0006E4E27 /* Info.plist */,
 			);
 			path = Mostla;
+			sourceTree = "<group>";
+		};
+		44891EFAEAF4483B7D943DA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B55AC36F0CBBAF631013E44B /* Pods-Mostla.debug.xcconfig */,
+				AA1C68E134A6BE3FD4B46319 /* Pods-Mostla.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B38285ABFCB312252AEE1AE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9FA46FA6187CDA49F1755AF /* Pods_Mostla.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3144E55F21764BB0006E4E27 /* Build configuration list for PBXNativeTarget "Mostla" */;
 			buildPhases = (
+				A4BE3DDE9664E6FD3D3918AB /* [CP] Check Pods Manifest.lock */,
 				3144E54921764BAF006E4E27 /* Sources */,
 				3144E54A21764BAF006E4E27 /* Frameworks */,
 				3144E54B21764BAF006E4E27 /* Resources */,
+				66857849DF0BFEAB68814BED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -118,6 +160,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = 3144E54421764BAF006E4E27;
 			productRefGroup = 3144E54E21764BAF006E4E27 /* Products */;
@@ -134,13 +177,62 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315700D221840EF20004A5E0 /* Localizable.strings in Resources */,
 				3144E55B21764BB0006E4E27 /* LaunchScreen.storyboard in Resources */,
+				31BA2BB0217E6D510019DC31 /* art.scnassets in Resources */,
 				3144E55821764BB0006E4E27 /* Assets.xcassets in Resources */,
 				3144E55621764BAF006E4E27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66857849DF0BFEAB68814BED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mostla/Pods-Mostla-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mostla/Pods-Mostla-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4BE3DDE9664E6FD3D3918AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mostla-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3144E54921764BAF006E4E27 /* Sources */ = {
@@ -150,9 +242,11 @@
 				31E418AA21778793003134A8 /* CollectionViewController.swift in Sources */,
 				FB3D945C2177A25B003A4290 /* ViewControllerTecnologias.swift in Sources */,
 				31E418AC21778966003134A8 /* Technology.swift in Sources */,
+				31BA2BAE217E6C2C0019DC31 /* ViewControllerAR.swift in Sources */,
 				31E418AE217790DC003134A8 /* CollectionViewCell.swift in Sources */,
 				3144E55121764BAF006E4E27 /* AppDelegate.swift in Sources */,
 				3143015321781EC400765693 /* StartViewController.swift in Sources */,
+				315700CF21840DB10004A5E0 /* genstrings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +257,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				3144E55521764BAF006E4E27 /* Base */,
+				31E8CD97218416B200E13CEE /* en */,
+				31E8CD98218417CD00E13CEE /* es-419 */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -171,8 +267,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				3144E55A21764BB0006E4E27 /* Base */,
+				31E8CD99218417CD00E13CEE /* es-419 */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		315700D421840EF20004A5E0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				315700D321840EF20004A5E0 /* en */,
+				31E8CD9A218417CD00E13CEE /* es-419 */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -182,6 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -243,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -296,9 +404,11 @@
 		};
 		3144E56021764BB0006E4E27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B55AC36F0CBBAF631013E44B /* Pods-Mostla.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B93Q7YMCMK;
 				INFOPLIST_FILE = Mostla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,9 +423,11 @@
 		};
 		3144E56121764BB0006E4E27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA1C68E134A6BE3FD4B46319 /* Pods-Mostla.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B93Q7YMCMK;
 				INFOPLIST_FILE = Mostla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

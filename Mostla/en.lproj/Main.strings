@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "Empezar"; ObjectID = "C8G-xA-85D"; */
+"C8G-xA-85D.normalTitle" = "Start";
+
+/* Class = "UILabel"; text = "Bienvenido"; ObjectID = "E0p-9I-3Ad"; */
+"E0p-9I-3Ad.text" = "Welcome";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Xfy-yj-wcu"; */
+"Xfy-yj-wcu.text" = "Label";
+
+/* Class = "UILabel"; text = "En esta aplicación podrás aprender más el laboratorio Mostla y sobre las nuevas tecnologías"; ObjectID = "eo8-w1-yFY"; */
+"eo8-w1-yFY.text" = "In this app you'll learn more about the Mostla lab and the new technologies";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "h3x-Uk-wVc"; */
+"h3x-Uk-wVc.text" = "Label";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "scH-K6-rBl"; */
+"scH-K6-rBl.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UINavigationItem"; title = "Tecnologías"; ObjectID = "xsM-KV-Evp"; */
+"xsM-KV-Evp.title" = "Tech";
