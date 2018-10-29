@@ -8,4 +8,5 @@ target 'Mostla' do
   # Pods for Mostla
   source 'https://github.com/CocoaPods/Specs.git'
   pod 'Localize-Swift', '~> 2.0'
+  pod 'SideMenu'
 end

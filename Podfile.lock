@@ -1,16 +1,20 @@
 PODS:
   - Localize-Swift (2.0.0)
+  - SideMenu (5.0.2)
 
 DEPENDENCIES:
   - Localize-Swift (~> 2.0)
+  - SideMenu
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Localize-Swift
+    - SideMenu
 
 SPEC CHECKSUMS:
   Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
+  SideMenu: e5094f0b2e7d9609e100a90ae69025abd994f882
 
-PODFILE CHECKSUM: 1a975cfbee64b1f4ea70bce2fd1f8450f943a575
+PODFILE CHECKSUM: ce39ccc14656ccbb2f18e4385a23ca7e7a146bcd
 
 COCOAPODS: 1.5.3
