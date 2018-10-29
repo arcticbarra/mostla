@@ -14,8 +14,6 @@
 		3144E55B21764BB0006E4E27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3144E55921764BB0006E4E27 /* LaunchScreen.storyboard */; };
 		315700CF21840DB10004A5E0 /* genstrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315700CE21840DB10004A5E0 /* genstrings.swift */; };
 		315700D221840EF20004A5E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 315700D421840EF20004A5E0 /* Localizable.strings */; };
-		31BA2BAE217E6C2C0019DC31 /* ViewControllerAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BA2BAD217E6C2C0019DC31 /* ViewControllerAR.swift */; };
-		31BA2BB0217E6D510019DC31 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 31BA2BAF217E6D510019DC31 /* art.scnassets */; };
 		31E418AA21778793003134A8 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E418A921778793003134A8 /* CollectionViewController.swift */; };
 		31E418AC21778966003134A8 /* Technology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E418AB21778966003134A8 /* Technology.swift */; };
 		31E418AE217790DC003134A8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E418AD217790DC003134A8 /* CollectionViewCell.swift */; };
@@ -33,8 +31,6 @@
 		3144E55C21764BB0006E4E27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		315700CE21840DB10004A5E0 /* genstrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genstrings.swift; sourceTree = "<group>"; };
 		315700D321840EF20004A5E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		31BA2BAD217E6C2C0019DC31 /* ViewControllerAR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAR.swift; sourceTree = "<group>"; };
-		31BA2BAF217E6D510019DC31 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		31E418A921778793003134A8 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		31E418AB21778966003134A8 /* Technology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Technology.swift; sourceTree = "<group>"; };
 		31E418AD217790DC003134A8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -83,8 +79,6 @@
 			children = (
 				3144E55021764BAF006E4E27 /* AppDelegate.swift */,
 				3144E55421764BAF006E4E27 /* Main.storyboard */,
-				31BA2BAD217E6C2C0019DC31 /* ViewControllerAR.swift */,
-				31BA2BAF217E6D510019DC31 /* art.scnassets */,
 				3143015221781EC400765693 /* StartViewController.swift */,
 				FB3D945B2177A25B003A4290 /* ViewControllerTecnologias.swift */,
 				31E418AD217790DC003134A8 /* CollectionViewCell.swift */,
@@ -179,7 +173,6 @@
 			files = (
 				315700D221840EF20004A5E0 /* Localizable.strings in Resources */,
 				3144E55B21764BB0006E4E27 /* LaunchScreen.storyboard in Resources */,
-				31BA2BB0217E6D510019DC31 /* art.scnassets in Resources */,
 				3144E55821764BB0006E4E27 /* Assets.xcassets in Resources */,
 				3144E55621764BAF006E4E27 /* Main.storyboard in Resources */,
 			);
@@ -242,7 +235,6 @@
 				31E418AA21778793003134A8 /* CollectionViewController.swift in Sources */,
 				FB3D945C2177A25B003A4290 /* ViewControllerTecnologias.swift in Sources */,
 				31E418AC21778966003134A8 /* Technology.swift in Sources */,
-				31BA2BAE217E6C2C0019DC31 /* ViewControllerAR.swift in Sources */,
 				31E418AE217790DC003134A8 /* CollectionViewCell.swift in Sources */,
 				3144E55121764BAF006E4E27 /* AppDelegate.swift in Sources */,
 				3143015321781EC400765693 /* StartViewController.swift in Sources */,
@@ -408,7 +400,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B93Q7YMCMK;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Mostla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -427,7 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B93Q7YMCMK;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Mostla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
