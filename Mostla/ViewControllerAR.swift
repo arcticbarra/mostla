@@ -13,34 +13,77 @@ import ARKit
 class ViewControllerAR: UIViewController, ARSCNViewDelegate {
   @IBOutlet weak var sceneView: ARSCNView!
   
+  let fadeDuration: TimeInterval = 0.3
+  let rotateDuration: TimeInterval = 3
+  let waitDuration: TimeInterval = 0.5
+  
+  lazy var fadeAndSpinAction: SCNAction = {
+    return .sequence([
+      .fadeIn(duration: fadeDuration),
+      .rotateBy(x: 0, y: 0, z: CGFloat.pi * 360 / 180, duration: rotateDuration)
+      ])
+  }()
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-      sceneView.delegate = self
-      let scene = SCNScene(named: "art.scnassets/ship.scn")!
-      sceneView.scene = scene
-
-        // Do any additional setup after loading the view.
+        sceneView.delegate = self
     }
+  
+  func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+    DispatchQueue.main.async {
+      guard let imageAnchor = anchor as? ARImageAnchor,
+        let imageName = imageAnchor.referenceImage.name else { return }
+      let overlayNode = self.getNode(withImageName: imageName)
+      overlayNode.opacity = 0
+      overlayNode.position.y = 0.2
+      overlayNode.runAction(self.fadeAndSpinAction)
+      
+      node.addChildNode(overlayNode)
+    }
+  }
+  
+  lazy var shipNode: SCNNode = {
+    guard let scene = SCNScene(named: "art.scnassets/ship.scn"),
+      let node = scene.rootNode.childNode(withName: "ship", recursively: false) else { return SCNNode() }
+    let scaleFactor  = 0.1
+    node.scale = SCNVector3(scaleFactor, scaleFactor, scaleFactor)
+    node.eulerAngles.x += -.pi / 2
+    return node
+  }()
+  
+  func getPlaneNode(withReferenceImage image: ARReferenceImage) -> SCNNode {
+    let plane = SCNPlane(width: image.physicalSize.width,
+                         height: image.physicalSize.height)
+    let node = SCNNode(geometry: plane)
+    return node
+  }
+  
+  func getNode(withImageName name: String) -> SCNNode {
+    var node = SCNNode()
+    switch name {
+    case "IMG_1398":
+      node = shipNode
+    default:
+      break
+    }
+    return node
+  }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillDisappear(animated)
-    let configuraton = ARWorldTrackingConfiguration()
-    sceneView.session.run(configuraton)
+    resetTrackingConfiguration()
   }
   
   override func viewWillDisappear(_ animated: Bool) {
     sceneView.session.pause()
   }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  
+  func resetTrackingConfiguration() {
+    guard let referenceImages = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: nil) else { return }
+    let configuration = ARWorldTrackingConfiguration()
+    configuration.detectionImages = referenceImages
+    let options: ARSession.RunOptions = [.resetTracking, .removeExistingAnchors]
+    sceneView.session.run(configuration, options: options)
+  }
 
 }
