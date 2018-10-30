@@ -10,10 +10,12 @@
 		3143015321781EC400765693 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3143015221781EC400765693 /* StartViewController.swift */; };
 		3144E55121764BAF006E4E27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3144E55021764BAF006E4E27 /* AppDelegate.swift */; };
 		3144E55621764BAF006E4E27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3144E55421764BAF006E4E27 /* Main.storyboard */; };
-		3144E55821764BB0006E4E27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3144E55721764BB0006E4E27 /* Assets.xcassets */; };
 		3144E55B21764BB0006E4E27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3144E55921764BB0006E4E27 /* LaunchScreen.storyboard */; };
 		315700CF21840DB10004A5E0 /* genstrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315700CE21840DB10004A5E0 /* genstrings.swift */; };
 		315700D221840EF20004A5E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 315700D421840EF20004A5E0 /* Localizable.strings */; };
+		3157BFD12187E11E00930FC8 /* ViewControllerAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3157BFD02187E11E00930FC8 /* ViewControllerAR.swift */; };
+		3157BFD32187E14E00930FC8 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3157BFD22187E14E00930FC8 /* art.scnassets */; };
+		3157BFD52187E33700930FC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3157BFD42187E33700930FC8 /* Assets.xcassets */; };
 		31E418AA21778793003134A8 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E418A921778793003134A8 /* CollectionViewController.swift */; };
 		31E418AC21778966003134A8 /* Technology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E418AB21778966003134A8 /* Technology.swift */; };
 		31E418AE217790DC003134A8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E418AD217790DC003134A8 /* CollectionViewCell.swift */; };
@@ -26,11 +28,13 @@
 		3144E54D21764BAF006E4E27 /* Mostla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mostla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3144E55021764BAF006E4E27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3144E55521764BAF006E4E27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3144E55721764BB0006E4E27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3144E55A21764BB0006E4E27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3144E55C21764BB0006E4E27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		315700CE21840DB10004A5E0 /* genstrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genstrings.swift; sourceTree = "<group>"; };
 		315700D321840EF20004A5E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3157BFD02187E11E00930FC8 /* ViewControllerAR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAR.swift; sourceTree = "<group>"; };
+		3157BFD22187E14E00930FC8 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		3157BFD42187E33700930FC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31E418A921778793003134A8 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		31E418AB21778966003134A8 /* Technology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Technology.swift; sourceTree = "<group>"; };
 		31E418AD217790DC003134A8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -77,6 +81,9 @@
 		3144E54F21764BAF006E4E27 /* Mostla */ = {
 			isa = PBXGroup;
 			children = (
+				3157BFD42187E33700930FC8 /* Assets.xcassets */,
+				3157BFD22187E14E00930FC8 /* art.scnassets */,
+				3157BFD02187E11E00930FC8 /* ViewControllerAR.swift */,
 				3144E55021764BAF006E4E27 /* AppDelegate.swift */,
 				3144E55421764BAF006E4E27 /* Main.storyboard */,
 				3143015221781EC400765693 /* StartViewController.swift */,
@@ -86,7 +93,6 @@
 				315700CE21840DB10004A5E0 /* genstrings.swift */,
 				315700D421840EF20004A5E0 /* Localizable.strings */,
 				31E418AB21778966003134A8 /* Technology.swift */,
-				3144E55721764BB0006E4E27 /* Assets.xcassets */,
 				3144E55921764BB0006E4E27 /* LaunchScreen.storyboard */,
 				3144E55C21764BB0006E4E27 /* Info.plist */,
 			);
@@ -173,8 +179,9 @@
 			files = (
 				315700D221840EF20004A5E0 /* Localizable.strings in Resources */,
 				3144E55B21764BB0006E4E27 /* LaunchScreen.storyboard in Resources */,
-				3144E55821764BB0006E4E27 /* Assets.xcassets in Resources */,
+				3157BFD32187E14E00930FC8 /* art.scnassets in Resources */,
 				3144E55621764BAF006E4E27 /* Main.storyboard in Resources */,
+				3157BFD52187E33700930FC8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +244,7 @@
 				31E418AA21778793003134A8 /* CollectionViewController.swift in Sources */,
 				FB3D945C2177A25B003A4290 /* ViewControllerTecnologias.swift in Sources */,
 				31E418AC21778966003134A8 /* Technology.swift in Sources */,
+				3157BFD12187E11E00930FC8 /* ViewControllerAR.swift in Sources */,
 				31E418AE217790DC003134A8 /* CollectionViewCell.swift in Sources */,
 				3144E55121764BAF006E4E27 /* AppDelegate.swift in Sources */,
 				3143015321781EC400765693 /* StartViewController.swift in Sources */,
@@ -402,8 +410,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = B93Q7YMCMK;
 				INFOPLIST_FILE = Mostla/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -421,8 +430,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = B93Q7YMCMK;
 				INFOPLIST_FILE = Mostla/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
