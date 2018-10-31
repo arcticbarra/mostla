@@ -35,31 +35,31 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
       
       technologies = []
       technologies.append(
-        Technology(name: "Virtual Reality and Augmented Reality".localized(), info: VR, image: #imageLiteral(resourceName: "OculusRift01"))
+        Technology(name: "Virtual Reality and Augmented Reality".localized(), info: VR, image: #imageLiteral(resourceName: "VirtualReality"))
       )
       technologies.append(
         Technology(name: "Natural Language Processing".localized(), info: "[Not Provided Yet]", image: #imageLiteral(resourceName: "Xiaomi-VR"))
       )
       technologies.append(
-        Technology(name: "Internet of Things".localized(), info: IOT, image: #imageLiteral(resourceName: "Xiaomi-VR"))
+        Technology(name: "Internet of Things".localized(), info: IOT, image: #imageLiteral(resourceName: "IoT"))
       )
       technologies.append(
-        Technology(name: "Gesture-based Computing".localized(), info: "[Not Provided Yet]", image: #imageLiteral(resourceName: "Xiaomi-VR"))
+        Technology(name: "Gesture-based Computing".localized(), info: "[Not Provided Yet]", image: #imageLiteral(resourceName: "Gesture Based Computing"))
       )
       technologies.append(
-        Technology(name: "3D Printing and Scanning".localized(), info: ThreeD, image: #imageLiteral(resourceName: "Xiaomi-VR"))
+        Technology(name: "3D Printing and Scanning".localized(), info: ThreeD, image: #imageLiteral(resourceName: "3DPrinting"))
       )
       technologies.append(
-        Technology(name: "Holographics and telepresence".localized(), info: "[Not Provided Yet]", image: #imageLiteral(resourceName: "Xiaomi-VR"))
+        Technology(name: "Holographics and telepresence".localized(), info: "[Not Provided Yet]", image: #imageLiteral(resourceName: "Telepresence"))
       )
       technologies.append(
-        Technology(name: "Articial Intelligence".localized(), info: AI, image: #imageLiteral(resourceName: "Xiaomi-VR"))
+        Technology(name: "Articial Intelligence".localized(), info: AI, image: #imageLiteral(resourceName: "Artificial Inteligence"))
       )
       technologies.append(
         Technology(name: "Academic Video Production".localized(), info: "[Not Provided At All]", image: #imageLiteral(resourceName: "Xiaomi-VR"))
       )
       technologies.append(
-        Technology(name: "Drones and Robotics".localized(), info: drones, image: #imageLiteral(resourceName: "Xiaomi-VR"))
+        Technology(name: "Drones and Robotics".localized(), info: drones, image: #imageLiteral(resourceName: "Drones"))
       )
       
       let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
