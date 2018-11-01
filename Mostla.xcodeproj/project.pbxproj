@@ -16,6 +16,7 @@
 		3157BFD12187E11E00930FC8 /* ViewControllerAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3157BFD02187E11E00930FC8 /* ViewControllerAR.swift */; };
 		3157BFD32187E14E00930FC8 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3157BFD22187E14E00930FC8 /* art.scnassets */; };
 		3157BFD52187E33700930FC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3157BFD42187E33700930FC8 /* Assets.xcassets */; };
+		3173AC6C218A98F90093F2C4 /* Baloo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3173AC6B218A98F90093F2C4 /* Baloo-Regular.ttf */; };
 		31E418AA21778793003134A8 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E418A921778793003134A8 /* CollectionViewController.swift */; };
 		31E418AC21778966003134A8 /* Technology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E418AB21778966003134A8 /* Technology.swift */; };
 		31E418AE217790DC003134A8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E418AD217790DC003134A8 /* CollectionViewCell.swift */; };
@@ -35,6 +36,7 @@
 		3157BFD02187E11E00930FC8 /* ViewControllerAR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAR.swift; sourceTree = "<group>"; };
 		3157BFD22187E14E00930FC8 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		3157BFD42187E33700930FC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3173AC6B218A98F90093F2C4 /* Baloo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baloo-Regular.ttf"; sourceTree = "<group>"; };
 		31E418A921778793003134A8 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		31E418AB21778966003134A8 /* Technology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Technology.swift; sourceTree = "<group>"; };
 		31E418AD217790DC003134A8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		3144E54F21764BAF006E4E27 /* Mostla */ = {
 			isa = PBXGroup;
 			children = (
+				3173AC6B218A98F90093F2C4 /* Baloo-Regular.ttf */,
 				3157BFD42187E33700930FC8 /* Assets.xcassets */,
 				3157BFD22187E14E00930FC8 /* art.scnassets */,
 				3157BFD02187E11E00930FC8 /* ViewControllerAR.swift */,
@@ -182,6 +185,7 @@
 				3157BFD32187E14E00930FC8 /* art.scnassets in Resources */,
 				3144E55621764BAF006E4E27 /* Main.storyboard in Resources */,
 				3157BFD52187E33700930FC8 /* Assets.xcassets in Resources */,
+				3173AC6C218A98F90093F2C4 /* Baloo-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
