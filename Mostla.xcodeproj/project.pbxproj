@@ -17,6 +17,7 @@
 		3157BFD32187E14E00930FC8 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3157BFD22187E14E00930FC8 /* art.scnassets */; };
 		3157BFD52187E33700930FC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3157BFD42187E33700930FC8 /* Assets.xcassets */; };
 		3173AC6C218A98F90093F2C4 /* Baloo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3173AC6B218A98F90093F2C4 /* Baloo-Regular.ttf */; };
+		3173AC6E218AA4480093F2C4 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3173AC6D218AA4480093F2C4 /* CustomView.swift */; };
 		31E418AA21778793003134A8 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E418A921778793003134A8 /* CollectionViewController.swift */; };
 		31E418AC21778966003134A8 /* Technology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E418AB21778966003134A8 /* Technology.swift */; };
 		31E418AE217790DC003134A8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E418AD217790DC003134A8 /* CollectionViewCell.swift */; };
@@ -37,6 +38,7 @@
 		3157BFD22187E14E00930FC8 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		3157BFD42187E33700930FC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3173AC6B218A98F90093F2C4 /* Baloo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baloo-Regular.ttf"; sourceTree = "<group>"; };
+		3173AC6D218AA4480093F2C4 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		31E418A921778793003134A8 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		31E418AB21778966003134A8 /* Technology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Technology.swift; sourceTree = "<group>"; };
 		31E418AD217790DC003134A8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				3144E55421764BAF006E4E27 /* Main.storyboard */,
 				3143015221781EC400765693 /* StartViewController.swift */,
 				FB3D945B2177A25B003A4290 /* ViewControllerTecnologias.swift */,
+				3173AC6D218AA4480093F2C4 /* CustomView.swift */,
 				31E418AD217790DC003134A8 /* CollectionViewCell.swift */,
 				31E418A921778793003134A8 /* CollectionViewController.swift */,
 				315700CE21840DB10004A5E0 /* genstrings.swift */,
@@ -248,6 +251,7 @@
 				31E418AA21778793003134A8 /* CollectionViewController.swift in Sources */,
 				FB3D945C2177A25B003A4290 /* ViewControllerTecnologias.swift in Sources */,
 				31E418AC21778966003134A8 /* Technology.swift in Sources */,
+				3173AC6E218AA4480093F2C4 /* CustomView.swift in Sources */,
 				3157BFD12187E11E00930FC8 /* ViewControllerAR.swift in Sources */,
 				31E418AE217790DC003134A8 /* CollectionViewCell.swift in Sources */,
 				3144E55121764BAF006E4E27 /* AppDelegate.swift in Sources */,

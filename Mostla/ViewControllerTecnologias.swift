@@ -17,17 +17,17 @@ class ViewControllerTecnologias: UIViewController {
     var tit : String!
     var inf : String!
     var img: UIImage!
+  
     
-    override func viewDidLoad() {
+  @IBOutlet weak var containerView: UIView!
+  override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         titulo.text = tit
         info.text = inf
         image.image = img
     }
-    
 
     /*
     // MARK: - Navigation
