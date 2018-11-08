@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "IMG_1398.jpg"
+      "filename" : "3dprinting.jpg"
     }
   ],
   "info" : {
@@ -10,7 +10,7 @@
     "author" : "xcode"
   },
   "properties" : {
-    "width" : 9.7254851889683351,
-    "unit" : "inches"
+    "width" : 27.899999999999999,
+    "unit" : "centimeters"
   }
 }

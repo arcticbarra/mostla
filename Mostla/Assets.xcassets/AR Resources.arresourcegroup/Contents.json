@@ -5,7 +5,22 @@
   },
   "resources" : [
     {
-      "filename" : "IMG_1398.arreferenceimage"
+      "filename" : "3dprinting.arreferenceimage"
+    },
+    {
+      "filename" : "artificialintelligence.arreferenceimage"
+    },
+    {
+      "filename" : "drones.arreferenceimage"
+    },
+    {
+      "filename" : "iot.arreferenceimage"
+    },
+    {
+      "filename" : "video.arreferenceimage"
+    },
+    {
+      "filename" : "vr360.arreferenceimage"
     }
   ]
 }

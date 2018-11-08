@@ -12,6 +12,7 @@ import ARKit
 
 class ViewControllerAR: UIViewController, ARSCNViewDelegate {
   @IBOutlet weak var sceneView: ARSCNView!
+  @IBOutlet weak var startLabel: UILabel!
   
   let fadeDuration: TimeInterval = 0.3
   let rotateDuration: TimeInterval = 3
@@ -26,6 +27,8 @@ class ViewControllerAR: UIViewController, ARSCNViewDelegate {
   
     override func viewDidLoad() {
         super.viewDidLoad()
+      startLabel.layer.masksToBounds = true
+      startLabel.layer.cornerRadius = 6
         sceneView.delegate = self
     }
   
@@ -33,6 +36,7 @@ class ViewControllerAR: UIViewController, ARSCNViewDelegate {
     DispatchQueue.main.async {
       guard let imageAnchor = anchor as? ARImageAnchor,
         let imageName = imageAnchor.referenceImage.name else { return }
+      self.startLabel.isHidden = true
       let overlayNode = self.getNode(withImageName: imageName)
       overlayNode.opacity = 0
       overlayNode.position.y = 0.2
@@ -61,7 +65,17 @@ class ViewControllerAR: UIViewController, ARSCNViewDelegate {
   func getNode(withImageName name: String) -> SCNNode {
     var node = SCNNode()
     switch name {
-    case "IMG_1398":
+    case "vr360":
+      node = shipNode
+    case "artificialintelligence":
+      node = shipNode
+    case "video":
+      node = shipNode
+    case "drones":
+      node = shipNode
+    case "3dprinting":
+      node = shipNode
+    case "iot":
       node = shipNode
     default:
       break
