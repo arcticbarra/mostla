@@ -8,6 +8,7 @@
 
 import UIKit
 import SceneKit
+import WebKit
 import ARKit
 
 class ViewControllerAR: UIViewController, ARSCNViewDelegate {
@@ -20,8 +21,7 @@ class ViewControllerAR: UIViewController, ARSCNViewDelegate {
   
   lazy var fadeAndSpinAction: SCNAction = {
     return .sequence([
-      .fadeIn(duration: fadeDuration),
-      .rotateBy(x: 0, y: 0, z: CGFloat.pi * 360 / 180, duration: rotateDuration)
+      .fadeIn(duration: fadeDuration)
       ])
   }()
   
@@ -47,8 +47,8 @@ class ViewControllerAR: UIViewController, ARSCNViewDelegate {
   }
   
   lazy var shipNode: SCNNode = {
-    guard let scene = SCNScene(named: "art.scnassets/ship.scn"),
-      let node = scene.rootNode.childNode(withName: "ship", recursively: false) else { return SCNNode() }
+    guard let scene = SCNScene(named: "art.scnassets/iot.scn"),
+      let node = scene.rootNode.childNode(withName: "box", recursively: false) else { return SCNNode() }
     let scaleFactor  = 0.1
     node.scale = SCNVector3(scaleFactor, scaleFactor, scaleFactor)
     node.eulerAngles.x += -.pi / 2
