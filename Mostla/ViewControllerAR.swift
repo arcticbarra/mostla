@@ -46,8 +46,53 @@ class ViewControllerAR: UIViewController, ARSCNViewDelegate {
     }
   }
   
-  lazy var shipNode: SCNNode = {
+  lazy var aiNode: SCNNode = {
+    guard let scene = SCNScene(named: "art.scnassets/ai.scn"),
+      let node = scene.rootNode.childNode(withName: "box", recursively: false) else { return SCNNode() }
+    let scaleFactor  = 0.1
+    node.scale = SCNVector3(scaleFactor, scaleFactor, scaleFactor)
+    node.eulerAngles.x += -.pi / 2
+    return node
+  }()
+  
+  lazy var printingNode: SCNNode = {
+    guard let scene = SCNScene(named: "art.scnassets/printing.scn"),
+      let node = scene.rootNode.childNode(withName: "box", recursively: false) else { return SCNNode() }
+    let scaleFactor  = 0.1
+    node.scale = SCNVector3(scaleFactor, scaleFactor, scaleFactor)
+    node.eulerAngles.x += -.pi / 2
+    return node
+  }()
+  
+  lazy var dronesNode: SCNNode = {
+    guard let scene = SCNScene(named: "art.scnassets/drones.scn"),
+      let node = scene.rootNode.childNode(withName: "box", recursively: false) else { return SCNNode() }
+    let scaleFactor  = 0.1
+    node.scale = SCNVector3(scaleFactor, scaleFactor, scaleFactor)
+    node.eulerAngles.x += -.pi / 2
+    return node
+  }()
+  
+  lazy var iotNode: SCNNode = {
+    guard let scene = SCNScene(named: "art.scnassets/iot.scn"),
+      let node = scene.rootNode.childNode(withName: "box", recursively: false) else { return SCNNode() }
+    let scaleFactor  = 0.1
+    node.scale = SCNVector3(scaleFactor, scaleFactor, scaleFactor)
+    node.eulerAngles.x += -.pi / 2
+    return node
+  }()
+  
+  lazy var arNode: SCNNode = {
     guard let scene = SCNScene(named: "art.scnassets/ar.scn"),
+      let node = scene.rootNode.childNode(withName: "box", recursively: false) else { return SCNNode() }
+    let scaleFactor  = 0.1
+    node.scale = SCNVector3(scaleFactor, scaleFactor, scaleFactor)
+    node.eulerAngles.x += -.pi / 2
+    return node
+  }()
+  
+  lazy var videoNode: SCNNode = {
+    guard let scene = SCNScene(named: "art.scnassets/holographic.scn"),
       let node = scene.rootNode.childNode(withName: "box", recursively: false) else { return SCNNode() }
     let scaleFactor  = 0.1
     node.scale = SCNVector3(scaleFactor, scaleFactor, scaleFactor)
@@ -66,17 +111,17 @@ class ViewControllerAR: UIViewController, ARSCNViewDelegate {
     var node = SCNNode()
     switch name {
     case "vr360":
-      node = shipNode
+      node = arNode
     case "artificialintelligence":
-      node = shipNode
+      node = aiNode
     case "video":
-      node = shipNode
+      node = videoNode
     case "drones":
-      node = shipNode
+      node = dronesNode
     case "3dprinting":
-      node = shipNode
+      node = printingNode
     case "iot":
-      node = shipNode
+      node = iotNode
     default:
       break
     }
