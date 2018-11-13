@@ -18,6 +18,7 @@ class ViewControllerAR: UIViewController, ARSCNViewDelegate {
   let fadeDuration: TimeInterval = 0.3
   let rotateDuration: TimeInterval = 3
   let waitDuration: TimeInterval = 0.5
+  var nodes: [SCNNode] = []
   
   lazy var fadeAndSpinAction: SCNAction = {
     return .sequence([
@@ -37,12 +38,15 @@ class ViewControllerAR: UIViewController, ARSCNViewDelegate {
       guard let imageAnchor = anchor as? ARImageAnchor,
         let imageName = imageAnchor.referenceImage.name else { return }
       self.startLabel.isHidden = true
+      let removeNode = self.nodes.popLast()
+      removeNode?.removeFromParentNode()
       let overlayNode = self.getNode(withImageName: imageName)
       overlayNode.opacity = 0
       overlayNode.position.y = 0.2
       overlayNode.runAction(self.fadeAndSpinAction)
       
       node.addChildNode(overlayNode)
+      self.nodes.append(overlayNode)
     }
   }
   
