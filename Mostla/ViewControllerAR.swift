@@ -47,7 +47,7 @@ class ViewControllerAR: UIViewController, ARSCNViewDelegate {
   }
   
   lazy var shipNode: SCNNode = {
-    guard let scene = SCNScene(named: "art.scnassets/iot.scn"),
+    guard let scene = SCNScene(named: "art.scnassets/ar.scn"),
       let node = scene.rootNode.childNode(withName: "box", recursively: false) else { return SCNNode() }
     let scaleFactor  = 0.1
     node.scale = SCNVector3(scaleFactor, scaleFactor, scaleFactor)
