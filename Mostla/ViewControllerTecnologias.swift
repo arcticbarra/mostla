@@ -28,7 +28,10 @@ class ViewControllerTecnologias: UIViewController {
         info.text = inf
         image.image = img
     }
-
+  override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return UIInterfaceOrientationMask.landscape
+  }
+  override var shouldAutorotate: Bool { return false
+  }
     /*
     // MARK: - Navigation
 

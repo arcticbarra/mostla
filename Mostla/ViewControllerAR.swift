@@ -20,6 +20,11 @@ class ViewControllerAR: UIViewController, ARSCNViewDelegate {
   let waitDuration: TimeInterval = 0.5
   var nodes: [SCNNode] = []
   
+  override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return UIInterfaceOrientationMask.landscape
+  }
+  override var shouldAutorotate: Bool { return false
+  }
+  
   lazy var fadeAndSpinAction: SCNAction = {
     return .sequence([
       .fadeIn(duration: fadeDuration)

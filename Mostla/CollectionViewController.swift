@@ -24,7 +24,11 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     var AI : String = "AI means that machines can perform tasks in ways that are 'intelligent.' These machines aren't just programmed to do a single, repetitive motion -- they can do more by adapting to different situations.People are seeking to create machines that can make decisions in similar ways to humans and use those decisions to complete tasks.\n\nNeural networks are a type of computer system that's made to classify information like our own brains do. These networks use the data they have access to make determinations. The data doesn't allow them to be perfectly accurate, but they can make decisions based on what's most likely to be right.\n\nMost importantly, these systems involve a feedback loop for 'learning'. The machine can find out whether or not its decisions were right, and then change its approach to do better next time.".localized()
     
     var drones : String = "Unmanned Aerial Systems (UAS), is the all-encompassing term that includes the UAV, or drone.  drones are filling a totally different niche, as improvements in software and management of drones simplify their use and allow for greater autonomy in functions such as collision avoidance, data collection, pre-programmed flight routing, Bluetooth capability, active tracking, terrain follow, etc.\n\nIt was in 2013 that consumer drones really began to take off. That's when a company called Dà-Jiāng Innovations Science and Technology Co. Ltd, better known as DJI, introduced the Phantom.\n\nDrones could become the secret weapon that gives local businesses a chance to compete against the increasingly speedy delivery of online giants like Amazon and Walmart.  Regulations need to catch up with technology, the technology is not yet mature.".localized()
-    
+  
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return UIInterfaceOrientationMask.landscape
+    }
+    override var shouldAutorotate: Bool { return false
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

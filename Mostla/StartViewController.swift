@@ -18,6 +18,11 @@ class StartViewController: UIViewController {
     button.layer.borderWidth = 1
     button.layer.borderColor = UIColor.darkGray.cgColor
     }
+  
+  override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return UIInterfaceOrientationMask.landscape
+  }
+  override var shouldAutorotate: Bool { return false
+  }
     
 
     /*
