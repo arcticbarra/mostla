@@ -15,6 +15,7 @@ class ViewControllerAR: UIViewController, ARSCNViewDelegate {
   @IBOutlet weak var sceneView: ARSCNView!
   @IBOutlet weak var startLabel: UILabel!
   
+  @IBOutlet weak var nextTech: UILabel!
   let fadeDuration: TimeInterval = 0.3
   let rotateDuration: TimeInterval = 3
   let waitDuration: TimeInterval = 0.5
@@ -36,6 +37,7 @@ class ViewControllerAR: UIViewController, ARSCNViewDelegate {
       startLabel.layer.masksToBounds = true
       startLabel.layer.cornerRadius = 6
         sceneView.delegate = self
+      nextTech.text = "Ir a módulo de realidad virtual"
     }
   
   func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
@@ -120,16 +122,22 @@ class ViewControllerAR: UIViewController, ARSCNViewDelegate {
     var node = SCNNode()
     switch name {
     case "vr360":
+      nextTech.text = "Ir a módulo de inteligencia artificial"
       node = arNode
     case "artificialintelligence":
+      nextTech.text = "Ir a módulo de telepresencia"
       node = aiNode
     case "video":
+      nextTech.text = "Ir a módulo de drones"
       node = videoNode
     case "drones":
+      nextTech.text = "Ir a módulo de impresión 3D"
       node = dronesNode
     case "3dprinting":
+      nextTech.text = "Ir a módulo de Internet of Things"
       node = printingNode
     case "iot":
+      nextTech.text = "Has terminado el tour"
       node = iotNode
     default:
       break

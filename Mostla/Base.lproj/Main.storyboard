@@ -403,13 +403,26 @@ MostlaApp se distribuye como está de manera gratuita y se prohíbe su distrib
                                 <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enfoca un letrero para iniciar el tour" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUM-op-QYv">
+                                <rect key="frame" x="0.0" y="682" width="414" height="54"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="Vum-kl-kqe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baloo-Regular" family="Baloo" pointSize="17"/>
+                                <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HGP-Cf-zHf" firstAttribute="centerX" secondItem="5aV-i4-NrB" secondAttribute="centerX" id="32j-fd-quK"/>
                             <constraint firstItem="KIi-rF-yYo" firstAttribute="trailing" secondItem="5aV-i4-NrB" secondAttribute="trailing" id="CCW-tt-fr9"/>
                             <constraint firstItem="KIi-rF-yYo" firstAttribute="bottom" secondItem="5aV-i4-NrB" secondAttribute="bottom" id="GGb-Yl-kzU"/>
+                            <constraint firstItem="hUM-op-QYv" firstAttribute="trailing" secondItem="5aV-i4-NrB" secondAttribute="trailing" id="ItW-sZ-Gt3"/>
                             <constraint firstItem="HGP-Cf-zHf" firstAttribute="centerY" secondItem="5Xi-w9-aAa" secondAttribute="centerY" id="Jan-ch-3c2"/>
+                            <constraint firstItem="hUM-op-QYv" firstAttribute="leading" secondItem="5aV-i4-NrB" secondAttribute="leading" id="Wz0-Wf-c8r"/>
+                            <constraint firstItem="hUM-op-QYv" firstAttribute="bottom" secondItem="5aV-i4-NrB" secondAttribute="bottom" id="jJX-qS-saD"/>
                             <constraint firstItem="5aV-i4-NrB" firstAttribute="top" secondItem="KIi-rF-yYo" secondAttribute="top" id="m7w-8U-rk1"/>
                             <constraint firstItem="HGP-Cf-zHf" firstAttribute="top" secondItem="KIi-rF-yYo" secondAttribute="top" constant="258" id="t7e-Ap-wVQ"/>
                             <constraint firstItem="HGP-Cf-zHf" firstAttribute="leading" secondItem="KIi-rF-yYo" secondAttribute="leading" constant="114" id="wVW-Dv-VgH"/>
@@ -418,6 +431,7 @@ MostlaApp se distribuye como está de manera gratuita y se prohíbe su distrib
                         <viewLayoutGuide key="safeArea" id="KIi-rF-yYo"/>
                     </view>
                     <connections>
+                        <outlet property="nextTech" destination="hUM-op-QYv" id="lfh-qZ-uvc"/>
                         <outlet property="sceneView" destination="5aV-i4-NrB" id="0yn-5W-gDx"/>
                         <outlet property="startLabel" destination="HGP-Cf-zHf" id="aDP-z2-1fl"/>
                     </connections>
