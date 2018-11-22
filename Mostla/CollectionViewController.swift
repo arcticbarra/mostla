@@ -17,13 +17,17 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     var VR : String = "Virtual Reality (VR) and Augmented Reality (AR) \n\n\tVirtual reality aims to achieve total immersion, sensory experience so real that we forget it is a virtual-artificial environment and begin to interact with it as we would naturally do.\n\n\tAugmented reality is the ability to integrate digital data into a real-time experience. Unlike virtual reality there are no bulky video headsets to contend with. Augmented reality has advanced and expanded, today, it is used in sports, medicine, education and marketing.\n\nThe difference between VR, AR, and mixed reality: \n\n -Virtual reality (VR) immerses users in a fully artificial digital environment.\n\n -Augmented reality (AR) overlays virtual objects on the real-world environment.\n\n -Mixed reality (MR) not just overlays but anchors virtual objects to the real world.".localized()
     
-    var IOT : String = "'It's about networks, it's about devices, and it's about data' \n\t\t- Caroline Gorski \n\nIn the broadest sense, the term IoT encompasses everything connected to the internet, but it is increasingly being used to define objects that 'talk' to each other.\n\nBy combining these connected devices with automated systems, it is possible to 'gather information, analyse it and create an action' to help someone with a particular task, or learn from a process. \n\n'IoT offers us opportunity to be more efficient in how we do things, saving us time, money and often emissions in the process', Evans says. It allows companies, governments and public authorities to rethink how they deliver services and produce goods.".localized()
-    
     var ThreeD : String = "3D printing, also known as additive manufacturing, is empowering artists, designers and makers with affordable, easily accessible tools, not just for dreaming up masterpieces of craft and design but also for creating, exhibiting and monetizing them. It’s a whole new kind of digital craftsmanship revolution.\n\nRecent advancements in speed, printing technology and material capabilities are now aligned, and together they will push the entire industry forward.\n\nPrototyping (55%), production (43%) and Proof of Concept models (41%) are the three most popular 3D printing applications in 2018 with R&D departments being the most active adopters.".localized()
     
     var AI : String = "AI means that machines can perform tasks in ways that are 'intelligent.' These machines aren't just programmed to do a single, repetitive motion -- they can do more by adapting to different situations.People are seeking to create machines that can make decisions in similar ways to humans and use those decisions to complete tasks.\n\nNeural networks are a type of computer system that's made to classify information like our own brains do. These networks use the data they have access to make determinations. The data doesn't allow them to be perfectly accurate, but they can make decisions based on what's most likely to be right.\n\nMost importantly, these systems involve a feedback loop for 'learning'. The machine can find out whether or not its decisions were right, and then change its approach to do better next time.".localized()
     
     var drones : String = "Unmanned Aerial Systems (UAS), is the all-encompassing term that includes the UAV, or drone.  drones are filling a totally different niche, as improvements in software and management of drones simplify their use and allow for greater autonomy in functions such as collision avoidance, data collection, pre-programmed flight routing, Bluetooth capability, active tracking, terrain follow, etc.\n\nIt was in 2013 that consumer drones really began to take off. That's when a company called Dà-Jiāng Innovations Science and Technology Co. Ltd, better known as DJI, introduced the Phantom.\n\nDrones could become the secret weapon that gives local businesses a chance to compete against the increasingly speedy delivery of online giants like Amazon and Walmart.  Regulations need to catch up with technology, the technology is not yet mature.".localized()
+  
+  var biometrics : String = "Is the measurement and statistical analysis of people's \nunique physical and behavioral characteristics. \nThe basic premise of biometric is that every person can be accurately \nidentified by his intrinsic physical or behavioral traits.".localized()
+  
+      var iot_nlp : String = "'It's about networks, it's about devices, and it's about data' \n\t\t- Caroline Gorski \n\nIn the broadest sense, the term IoT encompasses everything connected to the internet, but it is increasingly being used to define objects that 'talk' to each other.\n\nBy combining these connected devices with automated systems, it is possible to 'gather information, analyse it and create an action' to help someone with a particular task, or learn from a process. \n\n'IoT offers us opportunity to be more efficient in how we do things, saving us time, money and often emissions in the process', Evans says. It allows companies, governments and public authorities to rethink how they deliver services and produce goods.\n\nNatural Language Processing (NLP) refers to AI method \nof communicating with an intelligent systems using a \nnatural language such as English.\n\nProcessing of Natural Language is required \nwhen you want an intelligent system like robot \nto perform as per your instructions, when you want to \nhear decision from a dialogue based clinical expert \nsystem, etc. \n\nThe field of NLP involves making \ncomputers to perform useful tasks with the natural \nlanguages humans use. The input and output of \nan NLP system can be:\n\t\t-Speech\n\t\t-Written Text".localized()
+  
+  var video : String = "Video is an excellent medium for recording \ndemonstrations. Recorded demonstrations can free up \nclass time for other activities, can be used for many \nyears and in some cases for more than one course. \n\nRecording combines video of the presenter in a controlled \nenvironment. Recorded lectures have some \nadvantages over face-to-face lectures, students can \nrewind and review, videos can be captioned, and slides\nand other visual aids can be easier to see and review.".localized()
   
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask { return UIInterfaceOrientationMask.landscape
     }
@@ -42,13 +46,10 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         Technology(name: "Virtual Reality and Augmented Reality".localized(), info: VR, image: #imageLiteral(resourceName: "VirtualReality"))
       )
       technologies.append(
-        Technology(name: "Natural Language Processing".localized(), info: "[Not Provided Yet]", image: #imageLiteral(resourceName: "Xiaomi-VR"))
+        Technology(name: "Natural Language Processing y Internet of Things".localized(), info: iot_nlp, image: #imageLiteral(resourceName: "IoT"))
       )
       technologies.append(
-        Technology(name: "Internet of Things".localized(), info: IOT, image: #imageLiteral(resourceName: "IoT"))
-      )
-      technologies.append(
-        Technology(name: "Gesture-based Computing".localized(), info: "[Not Provided Yet]", image: #imageLiteral(resourceName: "Gesture Based Computing"))
+        Technology(name: "Biometrics".localized(), info: biometrics, image: #imageLiteral(resourceName: "Biometrics"))
       )
       technologies.append(
         Technology(name: "3D Printing and Scanning".localized(), info: ThreeD, image: #imageLiteral(resourceName: "3DPrinting"))
@@ -60,7 +61,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         Technology(name: "Articial Intelligence".localized(), info: AI, image: #imageLiteral(resourceName: "Artificial Inteligence"))
       )
       technologies.append(
-        Technology(name: "Academic Video Production".localized(), info: "[Not Provided At All]", image: #imageLiteral(resourceName: "Xiaomi-VR"))
+        Technology(name: "Academic Video Production".localized(), info: video, image: #imageLiteral(resourceName: "VideoProd"))
       )
       technologies.append(
         Technology(name: "Drones and Robotics".localized(), info: drones, image: #imageLiteral(resourceName: "Drones"))

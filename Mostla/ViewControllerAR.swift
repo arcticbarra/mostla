@@ -103,7 +103,7 @@ class ViewControllerAR: UIViewController, ARSCNViewDelegate {
   }()
   
   lazy var videoNode: SCNNode = {
-    guard let scene = SCNScene(named: "art.scnassets/holographic.scn"),
+    guard let scene = SCNScene(named: "art.scnassets/telepresence.scn"),
       let node = scene.rootNode.childNode(withName: "box", recursively: false) else { return SCNNode() }
     let scaleFactor  = 0.1
     node.scale = SCNVector3(scaleFactor, scaleFactor, scaleFactor)
